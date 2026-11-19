@@ -1,0 +1,77 @@
+/* Σχέδιο Β: προσθήκες πάνω στο αρχικό (γκρι + αφίσα με τις μπύρες) */
+.grey {
+  background: #b4b1ab;
+  --ivory: #111111;
+  --text-2: rgb(17 17 17 / 0.78);
+  --text-3: rgb(17 17 17 / 0.55);
+  --line: rgb(17 17 17 / 0.22);
+  --line-strong: rgb(17 17 17 / 0.4);
+  color: #111;
+}
+
+.beer {
+  padding-block: clamp(56px, 7vw, 112px);
+}
+
+.beer__grid {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding-inline: clamp(20px, 4vw, 56px);
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 420px), 1fr));
+  gap: clamp(32px, 6vw, 96px);
+  align-items: center;
+}
+
+.beer__poster {
+  width: min(100%, 500px);
+  justify-self: center;
+  display: block;
+  box-shadow: 0 30px 60px -30px rgba(0, 0, 0, 0.55);
+}
+
+.beer__label {
+  font-size: 12px;
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+  margin: 0 0 24px;
+}
+
+.beer__label span {
+  color: #b5121b;
+  margin-right: 10px;
+}
+
+.beer__title {
+  font-family: inherit;
+  font-weight: 900;
+  font-stretch: 62.5%;
+  text-transform: uppercase;
+  font-size: clamp(56px, 8vw, 120px);
+  line-height: 0.9;
+  margin: 0 0 28px;
+}
+
+.beer__text {
+  font-size: 19px;
+  line-height: 1.5;
+  max-width: 34ch;
+  margin: 0;
+}
+
+.footer.grey {
+  border-top: 0;
+}
+
+.footer.grey .footer__bottom {
+  border-color: rgb(17 17 17 / 0.22);
+}
+
+/* Yellowtail τοπικά, ώστε το logo να φαίνεται και χωρίς σύνδεση στο Google Fonts */
+@font-face {
+  font-family: "Yellowtail";
+  src: url("./fonts/Yellowtail-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
